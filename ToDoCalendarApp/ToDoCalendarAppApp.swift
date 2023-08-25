@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ToDoCalendarAppApp: App {
+    @StateObject private var taskController = TaskController()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TaskListView()
+                .environment(\.managedObjectContext, taskController.container.viewContext)
         }
     }
 }

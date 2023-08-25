@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		A181B6572A91E4DD00088B08 /* ToDoCalendarAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181B6562A91E4DD00088B08 /* ToDoCalendarAppApp.swift */; };
-		A181B6592A91E4DD00088B08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181B6582A91E4DD00088B08 /* ContentView.swift */; };
+		A181B6592A91E4DD00088B08 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181B6582A91E4DD00088B08 /* TaskListView.swift */; };
 		A181B65B2A91E4E500088B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A181B65A2A91E4E500088B08 /* Assets.xcassets */; };
 		A181B65E2A91E4E500088B08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A181B65D2A91E4E500088B08 /* Preview Assets.xcassets */; };
+		A181B6682A91E56900088B08 /* TaskModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A181B6662A91E56900088B08 /* TaskModel.xcdatamodeld */; };
+		A181B66A2A91E77800088B08 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181B6692A91E77800088B08 /* TaskController.swift */; };
+		A181B66D2A9312BB00088B08 /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181B66C2A9312BB00088B08 /* TaskEditView.swift */; };
+		A181B6712A9432F300088B08 /* NewTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181B6702A9432F300088B08 /* NewTaskButton.swift */; };
+		A1EC8F782A987657004D5693 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC8F772A987657004D5693 /* Persistence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A181B6532A91E4DD00088B08 /* ToDoCalendarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoCalendarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A181B6562A91E4DD00088B08 /* ToDoCalendarAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCalendarAppApp.swift; sourceTree = "<group>"; };
-		A181B6582A91E4DD00088B08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A181B6582A91E4DD00088B08 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		A181B65A2A91E4E500088B08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A181B65D2A91E4E500088B08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A181B6672A91E56900088B08 /* TaskModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskModel.xcdatamodel; sourceTree = "<group>"; };
+		A181B6692A91E77800088B08 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		A181B66C2A9312BB00088B08 /* TaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
+		A181B6702A9432F300088B08 /* NewTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskButton.swift; sourceTree = "<group>"; };
+		A1EC8F772A987657004D5693 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				A181B6562A91E4DD00088B08 /* ToDoCalendarAppApp.swift */,
-				A181B6582A91E4DD00088B08 /* ContentView.swift */,
+				A181B6652A91E53000088B08 /* DataModel */,
+				A181B66B2A93106A00088B08 /* Views */,
 				A181B65A2A91E4E500088B08 /* Assets.xcassets */,
 				A181B65C2A91E4E500088B08 /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				A181B65D2A91E4E500088B08 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A181B6652A91E53000088B08 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A181B6662A91E56900088B08 /* TaskModel.xcdatamodeld */,
+				A181B6692A91E77800088B08 /* TaskController.swift */,
+				A1EC8F772A987657004D5693 /* Persistence.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A181B66B2A93106A00088B08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A181B6582A91E4DD00088B08 /* TaskListView.swift */,
+				A181B66C2A9312BB00088B08 /* TaskEditView.swift */,
+				A181B6702A9432F300088B08 /* NewTaskButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A181B6592A91E4DD00088B08 /* ContentView.swift in Sources */,
+				A181B6592A91E4DD00088B08 /* TaskListView.swift in Sources */,
+				A181B66A2A91E77800088B08 /* TaskController.swift in Sources */,
 				A181B6572A91E4DD00088B08 /* ToDoCalendarAppApp.swift in Sources */,
+				A1EC8F782A987657004D5693 /* Persistence.swift in Sources */,
+				A181B6712A9432F300088B08 /* NewTaskButton.swift in Sources */,
+				A181B6682A91E56900088B08 /* TaskModel.xcdatamodeld in Sources */,
+				A181B66D2A9312BB00088B08 /* TaskEditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +375,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A181B6662A91E56900088B08 /* TaskModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A181B6672A91E56900088B08 /* TaskModel.xcdatamodel */,
+			);
+			currentVersion = A181B6672A91E56900088B08 /* TaskModel.xcdatamodel */;
+			path = TaskModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A181B64B2A91E4DD00088B08 /* Project object */;
 }
