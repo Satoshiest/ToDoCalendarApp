@@ -23,9 +23,9 @@ struct TaskListView: View {
                     List {
                         ForEach(tasks) { task in
                             NavigationLink {
-                                Text(task.title!)
+                                TaskEditView(selectedTaskItem: task)
                             } label: {
-                                Text(task.title!)
+                                TaskCell(task: task)
                             }
                         }
                         .onDelete(perform: deleteTask)
@@ -78,10 +78,6 @@ struct TaskListView: View {
         }
     }
 }
-
-
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

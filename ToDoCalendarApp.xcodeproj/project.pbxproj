@@ -16,6 +16,8 @@
 		A181B66D2A9312BB00088B08 /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181B66C2A9312BB00088B08 /* TaskEditView.swift */; };
 		A181B6712A9432F300088B08 /* NewTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A181B6702A9432F300088B08 /* NewTaskButton.swift */; };
 		A1EC8F782A987657004D5693 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC8F772A987657004D5693 /* Persistence.swift */; };
+		A1EC8F7A2A99A4F2004D5693 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC8F792A99A4F2004D5693 /* CheckBoxView.swift */; };
+		A1EC8F7C2A99A5B0004D5693 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC8F7B2A99A5B0004D5693 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		A181B66C2A9312BB00088B08 /* TaskEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
 		A181B6702A9432F300088B08 /* NewTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskButton.swift; sourceTree = "<group>"; };
 		A1EC8F772A987657004D5693 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A1EC8F792A99A4F2004D5693 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		A1EC8F7B2A99A5B0004D5693 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 				A181B6582A91E4DD00088B08 /* TaskListView.swift */,
 				A181B66C2A9312BB00088B08 /* TaskEditView.swift */,
 				A181B6702A9432F300088B08 /* NewTaskButton.swift */,
+				A1EC8F792A99A4F2004D5693 /* CheckBoxView.swift */,
+				A1EC8F7B2A99A5B0004D5693 /* TaskCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 				A181B6712A9432F300088B08 /* NewTaskButton.swift in Sources */,
 				A181B6682A91E56900088B08 /* TaskModel.xcdatamodeld in Sources */,
 				A181B66D2A9312BB00088B08 /* TaskEditView.swift in Sources */,
+				A1EC8F7C2A99A5B0004D5693 /* TaskCell.swift in Sources */,
+				A1EC8F7A2A99A4F2004D5693 /* CheckBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
